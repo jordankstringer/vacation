@@ -13,94 +13,50 @@
     <div class="jumbotron">
       <h1>Vacation Advisor<h1>
     </div>
-    <form>
+    <form id="vacationAdvisor">
       <h3>What sort of activities does your ideal vacation have?</h3>
-        <div class="radio">
-          <label>
-            <input type="radio" name="activities" value="relaxation" checked>
-            Relaxation
-          </label>
-          <label>
-            <input type="radio" name="activities" value="sports">
-            Sports
-          </label>
-          <label>
-            <input type="radio" name="activities" value="swimming">
-            Swimming
-          </label>
-        </div>
-    </form>
-    <form>
+        <select class="form-control" id="q1">
+          <option>Relaxation</option>
+          <option>Sports</option>
+          <option>Swimming</option>
+        </select>
+
       <h3>When you imagine where you want to be, you see...</h3>
-        <div class="radio">
-          <label>
-            <input type="radio" name="activities" value="forest" checked>
-            A Forest
-          </label>
-          <label>
-            <input type="radio" name="activities" value="mountains">
-            Mountains
-          </label>
-          <label>
-            <input type="radio" name="activities" value="beaches">
-            Beaches
-          </label>
-        </div>
-    </form>
-    <form>
-        <h3>A balmy heat, moderate breeze, or galcial wind?</h3>
-          <div class="radio">
-            <label>
-              <input type="radio" name="activities" value="breeze" checked>
-              Moderate Breeze
-            </label>
-            <label>
-              <input type="radio" name="activities" value="wind">
-              Glacial Wind
-            </label>
-            <label>
-              <input type="radio" name="activities" value="heat">
-              Balmy Heat
-            </label>
-          </div>
-    </form>
-    <form>
-        <h3>How would you like to be accommodated?</h3>
-          <div class="radio">
-            <label>
-              <input type="radio" name="activities" value="cabin" checked>
-              A Cabin in the Woods
-            </label>
-            <label>
-              <input type="radio" name="activities" value="lodge">
-              A Lodge Buried in Snow
-            </label>
-            <label>
-              <input type="radio" name="activities" value="hammock">
-              A Hammock Between Two Trees
-            </label>
-          </div>
-    </form>
-    <form>
-        <h3>Which seems least bothersome?</h3>
-          <div class="radio">
-            <label>
-              <input type="radio" name="activities" value="bugs" checked>
-              Bugs Galore
-            </label>
-            <label>
-              <input type="radio" name="activities" value="numb">
-              Numb Fingers
-            </label>
-            <label>
-              <input type="radio" name="activities" value="sand">
-              Sand in your Shorts
-            </label>
-          </div>
-    </form>
+        <select class="form-control" id="q2">
+          <option>A Forest</option>
+          <option>Mountains</option>
+          <option>Beaches</option>
+        </select>
+
+      <h3>A balmy heat, moderate breeze, or galcial wind?</h3>
+        <select class="form-control" id="q3">
+          <option>Moderate Breeze</option>
+          <option>Glacial Wind</option>
+          <option>Balmy Heat</option>
+        </select>
+
+      <h3>How would you like to be accommodated?</h3>
+        <select class="form-control" id="q4">
+          <option>A Cabin in the Woods</option>
+          <option>A Lodge Buried in Snow</option>
+          <option>A Hammock Between Two Trees</option>
+        </select>
+
+      <h3>Which seems least bothersome?</h3>
+        <select class="form-control" id="q5">
+          <option>Bugs Galore</option>
+          <option>Numb Fingers</option>
+          <option>Sand in your Shorts</option>
+        </select>
+      </form>
+
+<br></br>
 
 
       <button type="submit" class="btn btn-success">Submit!</button>
+
+      <div id="output">
+        <p>You desired destination is: <span class="vacation"></span></p>
 
 
     </div>
