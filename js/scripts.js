@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
   $("form#vacationAdvisor").submit(function(event) {
     event.preventDefault();
@@ -11,59 +10,60 @@ $(document).ready(function() {
     var q5 = $("#q5").val();
     var camping = 0;
     var mountains = 0;
-    var beach  = 0;
+    var beach = 0;
 
 
-    if (q1 === 0) {
-      camping + 1;
-    } else if (q1 === 1) {
-        mountains + 1;
+    if (q1 === "a") {
+      camping += 1;
+    } else if (q1 === "b") {
+        mountains += 1;
     }  else {
-        beach + 1;
+        beach += 1;
     }
 
-    if (q2 === 0) {
-      camping++;
-    } else if (q2 === 1) {
-        mountains++;
+    if (q2 === "a") {
+      camping += 1;
+    } else if (q2 === "b") {
+        mountains += 1;
     }  else {
-        beach++;
+        beach += 1;
     }
 
-    if (q3 === 0) {
-      camping++;
-    } else if (q3 === 1) {
-        mountains++;
+    if (q3 === "a") {
+      camping += 1;
+    } else if (q3 === "b") {
+        mountains += 1;
     }  else {
-        beach++;
+        beach += 1;
     }
 
-    if (q4 === 0) {
-      camping++;
-    } else if (q4 === 1) {
-        mountains++;
+    if (q4 === "a") {
+      camping += 1;
+    } else if (q4 === "b") {
+        mountains += 1;
     }  else {
-        beach++;
+        beach += 1;
     }
 
-    if (q5 === 0) {
-      camping++;
-    } else if (q5 === 1) {
-        mountains++;
+    if (q5 === "a") {
+      camping += 1;
+    } else if (q5 === "b") {
+        mountains += 1;
     }  else {
-        beach++;
+        beach += 1;
     }
-    console.log('camping')
+
 
     if (camping >= 3) {
-      $("#camping").show()
+      $("#camping1").toggle();
     } else if (mountains >= 3) {
-        $("#mountains").show()
-        else {
-          $("#beach").show()
+        $("#mountains1").toggle();
+      }  else {
+          $("#beach1").toggle();
     }
 
+  
 
-    $("#output").show();
+
   });
 });
